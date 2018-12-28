@@ -1,12 +1,14 @@
 <div class="navbar">
   <div class="title-banner">
+    <%= link_to :root, style: "text-decoration: none;" do %>
     <h1>Fine Fettling</h1>
+    <% end %>
   </div>
-  <% if controller.class != PagesController && controller.action_name != 'landing' %>
+  <% if controller.action_name != 'landing' %>
   <div class="nav-btns">
-    <a href="#">HOME</a>
-    <a href="#">GARAGE</a>
-    <a href="#">MEETINGS</a>
+    <%= link_to 'HOME', home_path, class: "tab home-tab" %>
+    <%= link_to 'GARAGE', garage_path, class: "tab garage-tab" %>
+    <%= link_to 'MEETINGS', :root, class: "tab meetings-tab" %>
   </div>
   <% end %>
 </div>

@@ -1,0 +1,27 @@
+<div class="garage-container">
+  <div class="garage-title">
+    <h2 class="text-center">A peak inside the MPH2 Garage…</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <% @cars.each do |car| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="card" style="margin-top: 30px;">
+          <div class="card-img">
+            <%= cl_image_tag(car.photo, :crop=>"fill") %>
+          </div>
+          <div class="card-details">
+            <div class="car-name">
+              <p class="car-brand-model"><%= "#{car.brand} - #{car.model}" %></p>
+              <p class="car-owner"><%= car.user.display_name %></p>
+            </div>
+            <div class="avatar">
+              <%= cl_image_tag(car.user.photo, class: "avatar") %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
   border: none;
-  margin: 0;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .title-banner {
@@ -31,15 +32,22 @@
   align-items: center;
   justify-content: center;
   box-shadow: 1px 1px 50px rgba(0,0,0,0.2);
+  .active {
+    border-bottom: 4px solid black !important;
+    font-weight: bold;
+  }
   a {
     font-size: 16px;
     color: black;
     text-decoration: none;
-    padding: 8px 28px;
+    padding: 8px 12px;
+    margin: 0 16px;
     transition: all 0.15s ease;
+    border-bottom: 4px solid white;
+    text-decoration: none !important;
   }
   a:hover {
-    font-weight: bold;
-    padding: 8px 26px;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    border-bottom: 4px solid rgb(255,194,17);
   }
 }

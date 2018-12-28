@@ -1,17 +1,17 @@
 <div class="top-banner">
   <div class="logo-container">
-    <%= image_tag 'Logo.jpg', class: "logo" %>
+    <%= cl_image_tag("mph2-logo.jpg", class: "logo") %>
   </div>
   <div class="enter-container">
     <div class="text-center title-container">
       <h1>MPH2</h1>
       <h1>Classic Car Club</h1>
     </div>
-    <%= link_to 'Enter',  class: 'enter-btn' %>
+    <%= link_to 'Enter', home_path, class: 'enter-btn' %>
     <h2>Members Only</h2>
   </div>
   <div class="pitlane-container">
-    <%= image_tag '328 Pitlane.jpg', class: "ferrari-pitlane" %>
+    <%= cl_image_tag("328-pitlane.jpg", class: "ferrari-pitlane") %>
   </div>
 </div>
 <div class="lp-wrapper">
@@ -23,17 +23,17 @@
     <%= image_tag 'alfaromeo.png', class: 'car-badge' %>
   </div>
   <div class="paddock-pic">
-    <%= image_tag 'paddock.jpg', class: 'paddock-image' %>
+    <%= cl_image_tag("paddock.jpg", class: 'paddock-image') %>
   </div>
 </div>
 <div class="mo">
   <div class="momoe-image">
-    <%= image_tag 'momoe.jpg', class: "momoe" %>
+    <%= cl_image_tag("momoe.jpg", class: "momoe") %>
   </div>
   <div class="strapline-container">
     <h2 class="strapline text-center">The one and only classic car club in the Midhurst-Petworth-Haslemere area</h2>
   </div>
 </div>
 <div class="goodwood-bird">
-  <%= image_tag 'goodwood-girl.jpg', class: 'goodwood-girl' %>
+  <%= cl_image_tag("goodwood-girl.jpg", class: 'goodwood-girl') %>
 </div>
