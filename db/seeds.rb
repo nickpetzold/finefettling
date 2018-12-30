@@ -14,7 +14,7 @@ User.destroy_all
 user = User.new(email: "matthewpetzold@gmail.com", first_name: "Matthew", last_name: "Petzold", display_name: "Matthew", password: 123456, photo: "pops-avatar.jpg")
 user.save
 
-user = User.new(email: "tonythomas@gmail.com", first_name: "Tony", last_name: "Thomas", display_name: "Chairman", password: 123456, photo: "chairmans-avatar.jpg")
+user = User.new(email: "tonythomas@gmail.com", first_name: "Tony", last_name: "Thomas", display_name: "Chairman", password: 123456, photo: "chairman-avatar.jpg")
 user.save
 
 user = User.new(email: "tonyday@gmail.com", first_name: "Tony", last_name: "Day", display_name: "Tony D", password: 123456, photo: "tony_day.jpg")
@@ -38,7 +38,7 @@ car = Car.new(brand: "BMW", model: "M5", year: "2001", photo: "bmw_m5.jpg")
 car.user = User.find_by(email: "matthewpetzold@gmail.com")
 car.save!
 
-car = Car.new(brand: "Fiat", model: "Punto", year: "2015", photo: "chairmans_hire_car.jpg")
+car = Car.new(brand: "Vauxhall", model: "Adam Rocks", year: "2015", photo: "chairmans_hire_car.jpg")
 car.user = User.find_by(email: "tonythomas@gmail.com")
 car.save!
 

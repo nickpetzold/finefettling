@@ -4,10 +4,11 @@ body {
 
 .top-banner {
   height: 660px;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 }
 
 .enter-container {
@@ -61,12 +62,12 @@ body {
   padding: 16px;
   margin-right: -100px;
   margin-left: 90px;
+  overflow: hidden;
 }
 
 .lp-wrapper {
   height: 100%;
-  width: 100%;
-
+  width: 100vw;
 }
 
 .car-icons {
@@ -74,6 +75,7 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 140px;
+  width: 100vw;
   .jag-badge {
     height: 66px;
     margin-right: -40px;
@@ -87,7 +89,7 @@ body {
 }
 
 .paddock-pic {
-  width: 100%;
+  width: 100vw;
   margin-top: -30px;
   z-index: -1;
   .paddock-image {
@@ -101,6 +103,7 @@ body {
   align-items: center;
   justify-content: space-around;
   height: 100vh;
+  width: 100vw;
 }
 
 .momoe {
@@ -127,7 +130,7 @@ body {
 }
 
 .goodwood-bird {
-  width: 100%;
+  width: 100vw;
   padding: 0;
   .goodwood-girl {
     width: 100%;

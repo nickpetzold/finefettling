@@ -1,14 +1,36 @@
-<div class="navbar">
+  <% if controller.action_name == 'landing' %>
+<div class="navbar-landing">
+  <div class="left-title">
+    <h1>Fine Fettling</h1>
+  </div>
+  <div class="landing-buttons">
+    <%= link_to 'Home', home_path, class: "tab home-tab" %>
+    <%= link_to 'Garage', garage_path, class: "tab garage-tab" %>
+    <%= link_to 'Pricing', pricing_path, class: "tab pricing-tab" %>
+    <%#= link_to 'Pricing', pricing_path, class: "tab pricing-tab", "data-toggle" => "modal", "data-target" => "#myModal" %>
+  </div>
+</div>
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <%#= render "devise/registrations/new" %>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<% if controller.action_name != 'landing' %>
+<div class="navbar-main">
   <div class="title-banner">
     <%= link_to :root, style: "text-decoration: none;" do %>
     <h1>Fine Fettling</h1>
     <% end %>
   </div>
-  <% if controller.action_name != 'landing' %>
   <div class="nav-btns">
     <%= link_to 'HOME', home_path, class: "tab home-tab" %>
     <%= link_to 'GARAGE', garage_path, class: "tab garage-tab" %>
-    <%= link_to 'MEETINGS', :root, class: "tab meetings-tab" %>
+    <%= link_to 'MEETINGS', meetings_path, class: "tab meetings-tab" %>
   </div>
-  <% end %>
 </div>
+<% end %>

@@ -1,0 +1,98 @@
+.pricing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 600px;
+  width: 900px;
+  background-color: black;
+}
+
+.pricing-titles {
+  margin-top: 40px;
+}
+
+.pricing-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.pricing-strapline {
+  font-size: 17px;
+  font-weight: bold;
+  color: white;
+}
+
+.prices {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.member-plan {
+  width: 200px;
+  height: 330px;
+  border-radius: 4px;
+  border: 0.25px solid black;
+  margin: 0 20px 20px 20px;
+  font-family: 'Arial';
+  padding: 30px 15px;
+  .type {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+  .price {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-left: 10px;
+  }
+  .billing-cycle {
+    font-weight: bold;
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  ul {
+    padding-left: 0;
+    margin-top: 40px;
+    li {
+      margin: 15px 0;
+      font-weight: bold;
+      font-size: 11px;
+    }
+  }
+}
+
+.standard {
+  background-color: white;
+  color: #333232;
+}
+
+.premium {
+  background-color: #D3D3D3;
+  color: #333232;
+}
+
+.presidente {
+  background-color: #969696;
+  color: white;
+}
+
+.footnote {
+  font-weight: bold;
+  font-size: 8px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓ ';
+}

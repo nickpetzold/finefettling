@@ -1,5 +1,5 @@
 .background-image {
-  background-image: url('https://res.cloudinary.com/dy6wiutks/image/upload/v1545905748/mgb-background.jpg');
+  background-image: url('https://res.cloudinary.com/dy6wiutks/image/upload/v1546131234/tr_background.jpg');
   height: 100%;
   width: 100%;
   background-size: cover;
@@ -22,12 +22,67 @@
 
 #home-container {
   width: 900px;
-  height: 1000px;
+  height: 100%;
   background-color: black;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   p {
     color: white;
   }
+}
+
+.home-title-container  {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.home-title {
+  font-size: 38px;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+}
+
+.home-main-image {
+  width: 600px;
+  margin-top: 30px;
+}
+
+.picture-strapline {
+  font-size: 15px;
+  color: white;
+}
+
+.mid-line {
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  width: 600px;
+  margin-top: 60px;
+  color: white;
+}
+
+.management-pics {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.management-pic {
+  width: 300px;
+  margin: 20px;
+}
+
+.final-word {
+  font-size: 28px;
+  font-weight: bold;
+  font-style: italic;
+  width: 600px;
+  margin: 50px;
+  color: white;
 }
 
 html {
